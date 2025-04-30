@@ -1,0 +1,305 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#logo img {
+    margin-right: 10px;
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    color: #6a1b9a;
+}
+
+/* Hero Section */
+.main-bg {
+    position: relative;
+}
+
+.main-bg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.the-text {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.the-text h1 {
+    font-size: 2.5em;
+    font-family: 'Rubik', sans-serif;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+}
+
+.about h1 {
+    font-size: 2.2em;
+    color: #6a1b9a;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Product Section */
+.popular {
+    padding: 50px 0;
+    background-color: #f3f3f3;
+}
+
+.popular h1 {
+    font-size: 2.2em;
+    color: #6a1b9a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image-in-card {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background Images */
+.m1 {
+    background-image: url("../images/jacket.jpeg");
+}
+
+.m2 {
+    background-image: url("../images/tshirt.jpeg");
+}
+
+.m3 {
+    background-image: url("../images/hoodie.jpeg");
+}
+
+.m4 {
+    background-image: url("../images/joggers.jpeg");
+}
+
+.card h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.4em;
+    margin: 16px;
+}
+
+.card p {
+    margin: 0 16px 16px;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.card h2 {
+    margin: 0 16px 16px;
+    color: #6a1b9a;
+}
+
+.abs-heart,
+.abs-basket {
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.abs-heart {
+    right: 50px;
+}
+
+.abs-basket {
+    right: 10px;
+}
+
+.abs-heart img,
+.abs-basket img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .block {
+    margin-bottom: 20px;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: #ddd;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+.my-list {
+    margin: 3rem 0;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  .my-list h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .top-picks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .top-picks li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .top-picks li:hover {
+    background-color: #eaeaea;
+  }
+  
+  .top-picks .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
